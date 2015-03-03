@@ -126,13 +126,7 @@
 
 - (void)customTabBar
 {
-//    UIImageView *imgView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"tabbar_bgview"]];
-//    imgView.frame = CGRectMake(0, [self getScreenHeight] - imgView.image.size.height, imgView.image.size.width, imgView.image.size.height);
-//    [self.view addSubview:imgView];
-//    
-//    slideBg.frame = CGRectMake(0, self.tabBar.frame.origin.y, slideBg.image.size.width, slideBg.image.size.height);
-//    
-//    [self.view addSubview:slideBg];
+
     UIView *buttonContentView = [[UIView alloc] initWithFrame:CGRectMake(0, self.tabBar.y, self.tabBar.width, self.tabBar.frame.size.height)];
     _btnContentView = buttonContentView;
     [buttonContentView setBackgroundColor:[UIColor colorWithRed:247/255.0 green:247/255.0 blue:247/255.0 alpha:1.0]];
