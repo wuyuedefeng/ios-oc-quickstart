@@ -10,7 +10,10 @@
 #define QuickExamApp_TXCommonHead_h
 
 #import "NSString+TXCategory.h"
+#import "UIViewController+TXCategory.h"
+#import "UIView+TXCategory.h"
 
+#import "TXBaseNavigationController.h"
 
 
 // 屏幕尺寸

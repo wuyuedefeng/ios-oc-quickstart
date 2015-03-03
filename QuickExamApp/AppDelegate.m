@@ -7,16 +7,22 @@
 //
 
 #import "AppDelegate.h"
-
+#import "CheckUpdate.h"
+#import "TXHomeTabbarController.h"
 @interface AppDelegate ()
 
 @end
-
+static TXHomeTabbarController *homeTabbarCtrl;
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //版本更新检查
+    [[CheckUpdate shareInstance] checkUpdate];
+
+    [self transToHomeTabbarController];
+    
     return YES;
 }
 
@@ -41,5 +47,16 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
+- (void)transToHomeTabbarController
+{
+    if(!homeTabbarCtrl)
+    {
+        homeTabbarCtrl = [[TXHomeTabbarController alloc] init];
+    }
+    self.window.rootViewController = homeTabbarCtrl;
+}
++ (void)cleanTXHomeTabbarController
+{
+    homeTabbarCtrl = nil;
+}
 @end

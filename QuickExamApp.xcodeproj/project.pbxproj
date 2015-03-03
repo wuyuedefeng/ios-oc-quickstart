@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		4B4639F21AA561EC00E6CAB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4639F11AA561EC00E6CAB1 /* main.m */; };
 		4B4639F51AA561EC00E6CAB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4639F41AA561EC00E6CAB1 /* AppDelegate.m */; };
-		4B4639F81AA561EC00E6CAB1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4639F71AA561EC00E6CAB1 /* ViewController.m */; };
 		4B4639FB1AA561EC00E6CAB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B4639F91AA561EC00E6CAB1 /* Main.storyboard */; };
 		4B4639FD1AA561EC00E6CAB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B4639FC1AA561EC00E6CAB1 /* Images.xcassets */; };
 		4B463A001AA561EC00E6CAB1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B4639FE1AA561EC00E6CAB1 /* LaunchScreen.xib */; };
 		4B463A0C1AA561EC00E6CAB1 /* QuickExamAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B463A0B1AA561EC00E6CAB1 /* QuickExamAppTests.m */; };
 		4B463AE71AA576DC00E6CAB1 /* CheckUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B463AE61AA576DC00E6CAB1 /* CheckUpdate.m */; };
 		4B463AED1AA577CA00E6CAB1 /* NSString+TXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B463AEC1AA577CA00E6CAB1 /* NSString+TXCategory.m */; };
+		4B463AF31AA5804200E6CAB1 /* TXHomeTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B463AF21AA5804200E6CAB1 /* TXHomeTabbarController.m */; };
+		4B463AF61AA5808600E6CAB1 /* TXBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B463AF51AA5808600E6CAB1 /* TXBaseNavigationController.m */; };
+		4B463AF91AA580C300E6CAB1 /* UIViewController+TXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B463AF81AA580C300E6CAB1 /* UIViewController+TXCategory.m */; };
+		4B463AFC1AA580F400E6CAB1 /* UIView+TXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B463AFB1AA580F400E6CAB1 /* UIView+TXCategory.m */; };
 		DCF6E3FEC219A3AAD95A5497 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93EA3D852B2123BA37BCF8BA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +40,6 @@
 		4B4639F11AA561EC00E6CAB1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4B4639F31AA561EC00E6CAB1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4B4639F41AA561EC00E6CAB1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4B4639F61AA561EC00E6CAB1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4B4639F71AA561EC00E6CAB1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4B4639FA1AA561EC00E6CAB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B4639FC1AA561EC00E6CAB1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4B4639FF1AA561EC00E6CAB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -52,6 +53,14 @@
 		4B463AEC1AA577CA00E6CAB1 /* NSString+TXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TXCategory.m"; sourceTree = "<group>"; };
 		4B463AEE1AA5780C00E6CAB1 /* TXCommonHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXCommonHead.h; sourceTree = "<group>"; };
 		4B463AF01AA579C700E6CAB1 /* quickExamPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quickExamPrefixHeader.pch; sourceTree = "<group>"; };
+		4B463AF11AA5804200E6CAB1 /* TXHomeTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXHomeTabbarController.h; sourceTree = "<group>"; };
+		4B463AF21AA5804200E6CAB1 /* TXHomeTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXHomeTabbarController.m; sourceTree = "<group>"; };
+		4B463AF41AA5808600E6CAB1 /* TXBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXBaseNavigationController.h; sourceTree = "<group>"; };
+		4B463AF51AA5808600E6CAB1 /* TXBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXBaseNavigationController.m; sourceTree = "<group>"; };
+		4B463AF71AA580C300E6CAB1 /* UIViewController+TXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TXCategory.h"; sourceTree = "<group>"; };
+		4B463AF81AA580C300E6CAB1 /* UIViewController+TXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TXCategory.m"; sourceTree = "<group>"; };
+		4B463AFA1AA580F400E6CAB1 /* UIView+TXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TXCategory.h"; sourceTree = "<group>"; };
+		4B463AFB1AA580F400E6CAB1 /* UIView+TXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TXCategory.m"; sourceTree = "<group>"; };
 		93EA3D852B2123BA37BCF8BA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -100,8 +109,8 @@
 			children = (
 				4B4639F31AA561EC00E6CAB1 /* AppDelegate.h */,
 				4B4639F41AA561EC00E6CAB1 /* AppDelegate.m */,
-				4B4639F61AA561EC00E6CAB1 /* ViewController.h */,
-				4B4639F71AA561EC00E6CAB1 /* ViewController.m */,
+				4B463AF11AA5804200E6CAB1 /* TXHomeTabbarController.h */,
+				4B463AF21AA5804200E6CAB1 /* TXHomeTabbarController.m */,
 				4B4639F91AA561EC00E6CAB1 /* Main.storyboard */,
 				4B4639FC1AA561EC00E6CAB1 /* Images.xcassets */,
 				4B4639FE1AA561EC00E6CAB1 /* LaunchScreen.xib */,
@@ -169,6 +178,8 @@
 		4B463AE81AA576F500E6CAB1 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				4B463AF41AA5808600E6CAB1 /* TXBaseNavigationController.h */,
+				4B463AF51AA5808600E6CAB1 /* TXBaseNavigationController.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -176,8 +187,12 @@
 		4B463AE91AA5772400E6CAB1 /* CustomCategory */ = {
 			isa = PBXGroup;
 			children = (
+				4B463AFA1AA580F400E6CAB1 /* UIView+TXCategory.h */,
+				4B463AFB1AA580F400E6CAB1 /* UIView+TXCategory.m */,
 				4B463AEB1AA577CA00E6CAB1 /* NSString+TXCategory.h */,
 				4B463AEC1AA577CA00E6CAB1 /* NSString+TXCategory.m */,
+				4B463AF71AA580C300E6CAB1 /* UIViewController+TXCategory.h */,
+				4B463AF81AA580C300E6CAB1 /* UIViewController+TXCategory.m */,
 			);
 			path = CustomCategory;
 			sourceTree = "<group>";
@@ -334,10 +349,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B4639F81AA561EC00E6CAB1 /* ViewController.m in Sources */,
 				4B463AED1AA577CA00E6CAB1 /* NSString+TXCategory.m in Sources */,
 				4B463AE71AA576DC00E6CAB1 /* CheckUpdate.m in Sources */,
+				4B463AF61AA5808600E6CAB1 /* TXBaseNavigationController.m in Sources */,
 				4B4639F51AA561EC00E6CAB1 /* AppDelegate.m in Sources */,
+				4B463AFC1AA580F400E6CAB1 /* UIView+TXCategory.m in Sources */,
+				4B463AF91AA580C300E6CAB1 /* UIViewController+TXCategory.m in Sources */,
+				4B463AF31AA5804200E6CAB1 /* TXHomeTabbarController.m in Sources */,
 				4B4639F21AA561EC00E6CAB1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
