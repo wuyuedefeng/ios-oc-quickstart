@@ -16,6 +16,7 @@
 #import "TXBaseNavigationController.h"
 
 
+#define IOS7_OR_LATER ([[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending)
 // 屏幕尺寸
 #define kTXScreenSize   ([UIScreen mainScreen].bounds.size)
 #define kTXScreenWidth  (kTXScreenSize.width)
