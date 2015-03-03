@@ -1,0 +1,18 @@
+//
+//  quickExamPrefixHeader.pch
+//  QuickExamApp
+//
+//  Created by TX-009 on 15-3-3.
+//  Copyright (c) 2015年 TX-009. All rights reserved.
+//
+
+#ifndef QuickExamApp_quickExamPrefixHeader_pch
+#define QuickExamApp_quickExamPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+    #import "TXCommonConfig.h"
+#endif
+
+#endif
