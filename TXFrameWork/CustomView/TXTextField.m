@@ -23,7 +23,7 @@
         self.backgroundColor = [UIColor whiteColor];
         [self.layer setBorderWidth:1.0];
         
-        self.canBlank = NO;
+        _canBlank = NO;
         self.enablesReturnKeyAutomatically = YES;
         
         

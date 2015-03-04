@@ -19,7 +19,7 @@ static TXHomeTabbarController *homeTabbarCtrl;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     //版本更新检查
-    [[CheckUpdate shareInstance] checkUpdate];
+    //[[CheckUpdate shareInstance] checkUpdate];
 
     [self transToHomeTabbarController];
     
