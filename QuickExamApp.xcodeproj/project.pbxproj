@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B39D50B1AA6F0F1008CC77C /* TXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D50A1AA6F0F1008CC77C /* TXBaseViewController.m */; };
+		4B39D50E1AA6F12D008CC77C /* UIColor+TXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D50D1AA6F12D008CC77C /* UIColor+TXCategory.m */; };
+		4B39D5111AA6F2D7008CC77C /* TXKeyBoardScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D5101AA6F2D7008CC77C /* TXKeyBoardScrollView.m */; };
+		4B39D5141AA6F2FA008CC77C /* TXScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D5131AA6F2FA008CC77C /* TXScrollView.m */; };
+		4B39D51A1AA6F31D008CC77C /* TXKeyBoardAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D5171AA6F31D008CC77C /* TXKeyBoardAccessory.m */; };
+		4B39D51B1AA6F31D008CC77C /* TXKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D5191AA6F31D008CC77C /* TXKeyboardManager.m */; };
+		4B39D51E1AA6F35F008CC77C /* UIView+WhenTappedBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D51D1AA6F35F008CC77C /* UIView+WhenTappedBlocks.m */; };
+		4B39D5211AA6F381008CC77C /* TXTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D5201AA6F381008CC77C /* TXTextField.m */; };
+		4B39D5241AA6F39C008CC77C /* TXTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D5231AA6F39C008CC77C /* TXTextView.m */; };
 		4B4639F21AA561EC00E6CAB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4639F11AA561EC00E6CAB1 /* main.m */; };
 		4B4639F51AA561EC00E6CAB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4639F41AA561EC00E6CAB1 /* AppDelegate.m */; };
 		4B4639FB1AA561EC00E6CAB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B4639F91AA561EC00E6CAB1 /* Main.storyboard */; };
@@ -35,6 +44,24 @@
 /* Begin PBXFileReference section */
 		109A11CF81347018E2613835 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		220C8AD43BE89F72C5BD4B36 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4B39D5091AA6F0F1008CC77C /* TXBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXBaseViewController.h; sourceTree = "<group>"; };
+		4B39D50A1AA6F0F1008CC77C /* TXBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXBaseViewController.m; sourceTree = "<group>"; };
+		4B39D50C1AA6F12D008CC77C /* UIColor+TXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TXCategory.h"; sourceTree = "<group>"; };
+		4B39D50D1AA6F12D008CC77C /* UIColor+TXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TXCategory.m"; sourceTree = "<group>"; };
+		4B39D50F1AA6F2D7008CC77C /* TXKeyBoardScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXKeyBoardScrollView.h; sourceTree = "<group>"; };
+		4B39D5101AA6F2D7008CC77C /* TXKeyBoardScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXKeyBoardScrollView.m; sourceTree = "<group>"; };
+		4B39D5121AA6F2FA008CC77C /* TXScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXScrollView.h; sourceTree = "<group>"; };
+		4B39D5131AA6F2FA008CC77C /* TXScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXScrollView.m; sourceTree = "<group>"; };
+		4B39D5161AA6F31D008CC77C /* TXKeyBoardAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXKeyBoardAccessory.h; sourceTree = "<group>"; };
+		4B39D5171AA6F31D008CC77C /* TXKeyBoardAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXKeyBoardAccessory.m; sourceTree = "<group>"; };
+		4B39D5181AA6F31D008CC77C /* TXKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXKeyboardManager.h; sourceTree = "<group>"; };
+		4B39D5191AA6F31D008CC77C /* TXKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXKeyboardManager.m; sourceTree = "<group>"; };
+		4B39D51C1AA6F35F008CC77C /* UIView+WhenTappedBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WhenTappedBlocks.h"; sourceTree = "<group>"; };
+		4B39D51D1AA6F35F008CC77C /* UIView+WhenTappedBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WhenTappedBlocks.m"; sourceTree = "<group>"; };
+		4B39D51F1AA6F381008CC77C /* TXTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTextField.h; sourceTree = "<group>"; };
+		4B39D5201AA6F381008CC77C /* TXTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTextField.m; sourceTree = "<group>"; };
+		4B39D5221AA6F39C008CC77C /* TXTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTextView.h; sourceTree = "<group>"; };
+		4B39D5231AA6F39C008CC77C /* TXTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTextView.m; sourceTree = "<group>"; };
 		4B4639EC1AA561EC00E6CAB1 /* QuickExamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickExamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B4639F01AA561EC00E6CAB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B4639F11AA561EC00E6CAB1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +110,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B39D5151AA6F31D008CC77C /* TXKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				4B39D5161AA6F31D008CC77C /* TXKeyBoardAccessory.h */,
+				4B39D5171AA6F31D008CC77C /* TXKeyBoardAccessory.m */,
+				4B39D5181AA6F31D008CC77C /* TXKeyboardManager.h */,
+				4B39D5191AA6F31D008CC77C /* TXKeyboardManager.m */,
+			);
+			path = TXKeyBoard;
+			sourceTree = "<group>";
+		};
 		4B4639E31AA561EC00E6CAB1 = {
 			isa = PBXGroup;
 			children = (
@@ -149,10 +187,10 @@
 		4B463ADE1AA5765F00E6CAB1 /* TXFrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				4B463AEA1AA5777C00E6CAB1 /* TXCommonConfig.h */,
 				4B463AE91AA5772400E6CAB1 /* CustomCategory */,
 				4B463AE81AA576F500E6CAB1 /* CustomView */,
 				4B463AE31AA576DC00E6CAB1 /* Tool */,
-				4B463AEA1AA5777C00E6CAB1 /* TXCommonConfig.h */,
 				4B463AEE1AA5780C00E6CAB1 /* TXCommonHead.h */,
 			);
 			path = TXFrameWork;
@@ -161,6 +199,7 @@
 		4B463AE31AA576DC00E6CAB1 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				4B39D5151AA6F31D008CC77C /* TXKeyBoard */,
 				4B463AE41AA576DC00E6CAB1 /* CheckUpdate */,
 			);
 			path = Tool;
@@ -178,8 +217,18 @@
 		4B463AE81AA576F500E6CAB1 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				4B39D5091AA6F0F1008CC77C /* TXBaseViewController.h */,
+				4B39D50A1AA6F0F1008CC77C /* TXBaseViewController.m */,
 				4B463AF41AA5808600E6CAB1 /* TXBaseNavigationController.h */,
 				4B463AF51AA5808600E6CAB1 /* TXBaseNavigationController.m */,
+				4B39D5121AA6F2FA008CC77C /* TXScrollView.h */,
+				4B39D5131AA6F2FA008CC77C /* TXScrollView.m */,
+				4B39D50F1AA6F2D7008CC77C /* TXKeyBoardScrollView.h */,
+				4B39D5101AA6F2D7008CC77C /* TXKeyBoardScrollView.m */,
+				4B39D51F1AA6F381008CC77C /* TXTextField.h */,
+				4B39D5201AA6F381008CC77C /* TXTextField.m */,
+				4B39D5221AA6F39C008CC77C /* TXTextView.h */,
+				4B39D5231AA6F39C008CC77C /* TXTextView.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -189,8 +238,12 @@
 			children = (
 				4B463AFA1AA580F400E6CAB1 /* UIView+TXCategory.h */,
 				4B463AFB1AA580F400E6CAB1 /* UIView+TXCategory.m */,
+				4B39D51C1AA6F35F008CC77C /* UIView+WhenTappedBlocks.h */,
+				4B39D51D1AA6F35F008CC77C /* UIView+WhenTappedBlocks.m */,
 				4B463AEB1AA577CA00E6CAB1 /* NSString+TXCategory.h */,
 				4B463AEC1AA577CA00E6CAB1 /* NSString+TXCategory.m */,
+				4B39D50C1AA6F12D008CC77C /* UIColor+TXCategory.h */,
+				4B39D50D1AA6F12D008CC77C /* UIColor+TXCategory.m */,
 				4B463AF71AA580C300E6CAB1 /* UIViewController+TXCategory.h */,
 				4B463AF81AA580C300E6CAB1 /* UIViewController+TXCategory.m */,
 			);
@@ -357,6 +410,15 @@
 				4B463AF91AA580C300E6CAB1 /* UIViewController+TXCategory.m in Sources */,
 				4B463AF31AA5804200E6CAB1 /* TXHomeTabbarController.m in Sources */,
 				4B4639F21AA561EC00E6CAB1 /* main.m in Sources */,
+				4B39D51B1AA6F31D008CC77C /* TXKeyboardManager.m in Sources */,
+				4B39D51A1AA6F31D008CC77C /* TXKeyBoardAccessory.m in Sources */,
+				4B39D50B1AA6F0F1008CC77C /* TXBaseViewController.m in Sources */,
+				4B39D50E1AA6F12D008CC77C /* UIColor+TXCategory.m in Sources */,
+				4B39D51E1AA6F35F008CC77C /* UIView+WhenTappedBlocks.m in Sources */,
+				4B39D5211AA6F381008CC77C /* TXTextField.m in Sources */,
+				4B39D5111AA6F2D7008CC77C /* TXKeyBoardScrollView.m in Sources */,
+				4B39D5141AA6F2FA008CC77C /* TXScrollView.m in Sources */,
+				4B39D5241AA6F39C008CC77C /* TXTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

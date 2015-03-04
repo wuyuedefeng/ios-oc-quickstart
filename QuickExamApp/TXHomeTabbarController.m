@@ -58,21 +58,17 @@
 - (void)configureViewControllers
 {
     //初始化ViewController
-    UIViewController *patient = [[UIViewController alloc] init];
-    patient.title = @"全部患者";
-    patient.view.backgroundColor = [UIColor redColor];
+    TXBaseViewController *patient = [[TXBaseViewController alloc] init];
+    patient.title = @"1";
     
-    UIViewController *work = [[UIViewController alloc] init];
-    work.title = @"工作管理";
-    work.view.backgroundColor = [UIColor blueColor];
+    TXBaseViewController *work = [[TXBaseViewController alloc] init];
+    work.title = @"2";
     
-    UIViewController *consult = [[UIViewController alloc] init];
-    consult.title = @"聊天";
-    consult.view.backgroundColor = [UIColor purpleColor];
+    TXBaseViewController *consult = [[TXBaseViewController alloc] init];
+    consult.title = @"3";
     
-    UIViewController *more = [[UIViewController alloc] init];
-    more.title = @"更多";
-    more.view.backgroundColor = [UIColor greenColor];
+    TXBaseViewController *more = [[TXBaseViewController alloc] init];
+    more.title = @"4";
     
     //创建导航
     TXBaseNavigationController *nav1 = [[ TXBaseNavigationController alloc] initWithRootViewController:patient];

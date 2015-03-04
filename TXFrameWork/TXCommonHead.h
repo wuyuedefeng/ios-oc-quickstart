@@ -12,8 +12,17 @@
 #import "NSString+TXCategory.h"
 #import "UIViewController+TXCategory.h"
 #import "UIView+TXCategory.h"
+#import "UIColor+TXCategory.h"
+#import "UIView+WhenTappedBlocks.h"
 
 #import "TXBaseNavigationController.h"
+#import "TXBaseViewController.h"
+
+#import "TXKeyboardManager.h"
+#import "TXScrollView.h"
+#import "TXKeyBoardScrollView.h"
+#import "TXTextField.h"
+#import "TXTextView.h"
 
 
 #define IOS7_OR_LATER ([[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending)

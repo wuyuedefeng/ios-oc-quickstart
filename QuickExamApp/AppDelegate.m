@@ -59,4 +59,16 @@ static TXHomeTabbarController *homeTabbarCtrl;
 {
     homeTabbarCtrl = nil;
 }
++ (void)hideTableBar:(BOOL)shouldHide
+{
+    if (homeTabbarCtrl) {
+        if (shouldHide) {
+            [homeTabbarCtrl hideMyTabBar];
+        }
+        else
+        {
+            [homeTabbarCtrl showMyTabBar];
+        }
+    }
+}
 @end
