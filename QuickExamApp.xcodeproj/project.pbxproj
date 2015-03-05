@@ -28,6 +28,11 @@
 		4B463AF61AA5808600E6CAB1 /* TXBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B463AF51AA5808600E6CAB1 /* TXBaseNavigationController.m */; };
 		4B463AF91AA580C300E6CAB1 /* UIViewController+TXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B463AF81AA580C300E6CAB1 /* UIViewController+TXCategory.m */; };
 		4B463AFC1AA580F400E6CAB1 /* UIView+TXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B463AFB1AA580F400E6CAB1 /* UIView+TXCategory.m */; };
+		4B805BF71AA7FD2100EFD96D /* TXTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B805BF61AA7FD2100EFD96D /* TXTableView.m */; };
+		4B805BFA1AA7FDBE00EFD96D /* TXTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B805BF91AA7FDBE00EFD96D /* TXTableViewCell.m */; };
+		4B805BFD1AA7FDEA00EFD96D /* TXEditableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B805BFC1AA7FDEA00EFD96D /* TXEditableTableViewCell.m */; };
+		4B805C001AA7FE2700EFD96D /* TXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B805BFF1AA7FE2700EFD96D /* TXButton.m */; };
+		4B805C031AA7FEA400EFD96D /* UITableViewCell+TXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B805C021AA7FEA400EFD96D /* UITableViewCell+TXCategory.m */; };
 		DCF6E3FEC219A3AAD95A5497 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93EA3D852B2123BA37BCF8BA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +93,16 @@
 		4B463AF81AA580C300E6CAB1 /* UIViewController+TXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TXCategory.m"; sourceTree = "<group>"; };
 		4B463AFA1AA580F400E6CAB1 /* UIView+TXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TXCategory.h"; sourceTree = "<group>"; };
 		4B463AFB1AA580F400E6CAB1 /* UIView+TXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TXCategory.m"; sourceTree = "<group>"; };
+		4B805BF51AA7FD2100EFD96D /* TXTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTableView.h; sourceTree = "<group>"; };
+		4B805BF61AA7FD2100EFD96D /* TXTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTableView.m; sourceTree = "<group>"; };
+		4B805BF81AA7FDBE00EFD96D /* TXTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTableViewCell.h; sourceTree = "<group>"; };
+		4B805BF91AA7FDBE00EFD96D /* TXTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTableViewCell.m; sourceTree = "<group>"; };
+		4B805BFB1AA7FDEA00EFD96D /* TXEditableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXEditableTableViewCell.h; sourceTree = "<group>"; };
+		4B805BFC1AA7FDEA00EFD96D /* TXEditableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXEditableTableViewCell.m; sourceTree = "<group>"; };
+		4B805BFE1AA7FE2700EFD96D /* TXButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXButton.h; sourceTree = "<group>"; };
+		4B805BFF1AA7FE2700EFD96D /* TXButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXButton.m; sourceTree = "<group>"; };
+		4B805C011AA7FEA400EFD96D /* UITableViewCell+TXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+TXCategory.h"; sourceTree = "<group>"; };
+		4B805C021AA7FEA400EFD96D /* UITableViewCell+TXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+TXCategory.m"; sourceTree = "<group>"; };
 		93EA3D852B2123BA37BCF8BA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -229,6 +244,14 @@
 				4B39D5201AA6F381008CC77C /* TXTextField.m */,
 				4B39D5221AA6F39C008CC77C /* TXTextView.h */,
 				4B39D5231AA6F39C008CC77C /* TXTextView.m */,
+				4B805BF51AA7FD2100EFD96D /* TXTableView.h */,
+				4B805BF61AA7FD2100EFD96D /* TXTableView.m */,
+				4B805BF81AA7FDBE00EFD96D /* TXTableViewCell.h */,
+				4B805BF91AA7FDBE00EFD96D /* TXTableViewCell.m */,
+				4B805BFB1AA7FDEA00EFD96D /* TXEditableTableViewCell.h */,
+				4B805BFC1AA7FDEA00EFD96D /* TXEditableTableViewCell.m */,
+				4B805BFE1AA7FE2700EFD96D /* TXButton.h */,
+				4B805BFF1AA7FE2700EFD96D /* TXButton.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -246,6 +269,8 @@
 				4B39D50D1AA6F12D008CC77C /* UIColor+TXCategory.m */,
 				4B463AF71AA580C300E6CAB1 /* UIViewController+TXCategory.h */,
 				4B463AF81AA580C300E6CAB1 /* UIViewController+TXCategory.m */,
+				4B805C011AA7FEA400EFD96D /* UITableViewCell+TXCategory.h */,
+				4B805C021AA7FEA400EFD96D /* UITableViewCell+TXCategory.m */,
 			);
 			path = CustomCategory;
 			sourceTree = "<group>";
@@ -408,6 +433,7 @@
 				4B4639F51AA561EC00E6CAB1 /* AppDelegate.m in Sources */,
 				4B463AFC1AA580F400E6CAB1 /* UIView+TXCategory.m in Sources */,
 				4B463AF91AA580C300E6CAB1 /* UIViewController+TXCategory.m in Sources */,
+				4B805C001AA7FE2700EFD96D /* TXButton.m in Sources */,
 				4B463AF31AA5804200E6CAB1 /* TXHomeTabbarController.m in Sources */,
 				4B4639F21AA561EC00E6CAB1 /* main.m in Sources */,
 				4B39D51B1AA6F31D008CC77C /* TXKeyboardManager.m in Sources */,
@@ -415,8 +441,12 @@
 				4B39D50B1AA6F0F1008CC77C /* TXBaseViewController.m in Sources */,
 				4B39D50E1AA6F12D008CC77C /* UIColor+TXCategory.m in Sources */,
 				4B39D51E1AA6F35F008CC77C /* UIView+WhenTappedBlocks.m in Sources */,
+				4B805BF71AA7FD2100EFD96D /* TXTableView.m in Sources */,
+				4B805BFA1AA7FDBE00EFD96D /* TXTableViewCell.m in Sources */,
 				4B39D5211AA6F381008CC77C /* TXTextField.m in Sources */,
+				4B805C031AA7FEA400EFD96D /* UITableViewCell+TXCategory.m in Sources */,
 				4B39D5111AA6F2D7008CC77C /* TXKeyBoardScrollView.m in Sources */,
+				4B805BFD1AA7FDEA00EFD96D /* TXEditableTableViewCell.m in Sources */,
 				4B39D5141AA6F2FA008CC77C /* TXScrollView.m in Sources */,
 				4B39D5241AA6F39C008CC77C /* TXTextView.m in Sources */,
 			);

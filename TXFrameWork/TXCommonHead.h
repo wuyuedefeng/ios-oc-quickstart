@@ -9,11 +9,15 @@
 #ifndef QuickExamApp_TXCommonHead_h
 #define QuickExamApp_TXCommonHead_h
 
+//#import <UIViewController+ScrollingNavbar.h>
+#import <XHPullRefreshTableViewController.h>
+
 #import "NSString+TXCategory.h"
 #import "UIViewController+TXCategory.h"
 #import "UIView+TXCategory.h"
 #import "UIColor+TXCategory.h"
 #import "UIView+WhenTappedBlocks.h"
+#import "UITableViewCell+TXCategory.h"
 
 #import "TXBaseNavigationController.h"
 #import "TXBaseViewController.h"
@@ -23,6 +27,10 @@
 #import "TXKeyBoardScrollView.h"
 #import "TXTextField.h"
 #import "TXTextView.h"
+#import "TXTableView.h"
+#import "TXTableViewCell.h"
+#import "TXEditableTableViewCell.h"
+#import "TXButton.h"
 
 
 #define IOS7_OR_LATER ([[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending)

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "CheckUpdate.h"
 #import "TXHomeTabbarController.h"
+#import <MLBlackTransition.h>
 @interface AppDelegate ()
 
 @end
@@ -22,6 +23,8 @@ static TXHomeTabbarController *homeTabbarCtrl;
     //[[CheckUpdate shareInstance] checkUpdate];
 
     [self transToHomeTabbarController];
+    //手势拖拽
+    [MLBlackTransition validatePanPackWithMLBlackTransitionGestureRecognizerType:MLBlackTransitionGestureRecognizerTypePan];
     
     return YES;
 }

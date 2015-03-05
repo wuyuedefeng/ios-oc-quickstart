@@ -35,12 +35,27 @@ static MBProgressHUD *HUD;
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-
     
+    if (!self.dataSource.count) {
+        [self startPullDownRefreshing];
+    }
+}
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+//    [self showNavBarAnimated:NO];
+}
+- (void)loadDataSource {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self endPullDownRefreshing];
+    });
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.refreshViewType = XHPullDownRefreshViewTypeActivityIndicator;
+    self.pullDownRefreshed = YES;
+    self.loadMoreRefreshed = NO;
     [self tx_SetTitleText:self.title Color:[UIColor blueColor] font:[UIFont systemFontOfSize:17]];
     
     
@@ -54,6 +69,8 @@ static MBProgressHUD *HUD;
     
     [self setAutomaticallyAdjustsScrollViewInsets:YES];
     [self setEdgesForExtendedLayout:UIRectEdgeNone];
+    
+    [self.keyBoardScrollView addSubview_canAjustKeyBoard:self.tableView];
 }
 
 - (void)didReceiveMemoryWarning

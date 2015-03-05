@@ -54,3 +54,15 @@
 #define COCOAPODS_VERSION_MINOR_MBProgressHUD 9
 #define COCOAPODS_VERSION_PATCH_MBProgressHUD 0
 
+// MLTransition
+#define COCOAPODS_POD_AVAILABLE_MLTransition
+#define COCOAPODS_VERSION_MAJOR_MLTransition 1
+#define COCOAPODS_VERSION_MINOR_MLTransition 0
+#define COCOAPODS_VERSION_PATCH_MLTransition 0
+
+// XHRefreshControl
+#define COCOAPODS_POD_AVAILABLE_XHRefreshControl
+#define COCOAPODS_VERSION_MAJOR_XHRefreshControl 3
+#define COCOAPODS_VERSION_MINOR_XHRefreshControl 8
+#define COCOAPODS_VERSION_PATCH_XHRefreshControl 0
+

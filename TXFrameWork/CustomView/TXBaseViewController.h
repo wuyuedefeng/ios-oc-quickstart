@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 @class TXKeyBoardScrollView;
 
-@interface TXBaseViewController : UIViewController
+@interface TXBaseViewController : XHPullRefreshTableViewController
 @property (nonatomic, weak) TXKeyBoardScrollView *keyBoardScrollView;
+
 
 - (void)beginRequestWithAnimation:(BOOL)hasAnimation;
 
