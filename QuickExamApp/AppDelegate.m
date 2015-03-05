@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "CheckUpdate.h"
 #import "TXHomeTabbarController.h"
-#import <MLBlackTransition.h>
 @interface AppDelegate ()
 
 @end
@@ -21,10 +20,11 @@ static TXHomeTabbarController *homeTabbarCtrl;
     // Override point for customization after application launch.
     //版本更新检查
     //[[CheckUpdate shareInstance] checkUpdate];
-
-    [self transToHomeTabbarController];
     //手势拖拽
     [MLBlackTransition validatePanPackWithMLBlackTransitionGestureRecognizerType:MLBlackTransitionGestureRecognizerTypePan];
+    
+    [self transToHomeController];
+    
     
     return YES;
 }
@@ -50,13 +50,16 @@ static TXHomeTabbarController *homeTabbarCtrl;
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-- (void)transToHomeTabbarController
+- (void)transToHomeController
 {
     if(!homeTabbarCtrl)
     {
         homeTabbarCtrl = [[TXHomeTabbarController alloc] init];
     }
     self.window.rootViewController = homeTabbarCtrl;
+
+    
+    [self.window makeKeyAndVisible];
 }
 + (void)cleanTXHomeTabbarController
 {

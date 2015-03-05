@@ -10,6 +10,7 @@
 #define QuickExamApp_TXCommonHead_h
 
 //#import <UIViewController+ScrollingNavbar.h>
+#import <MLBlackTransition.h>
 #import <XHPullRefreshTableViewController.h>
 
 #import "NSString+TXCategory.h"
@@ -19,6 +20,7 @@
 #import "UIView+WhenTappedBlocks.h"
 #import "UITableViewCell+TXCategory.h"
 
+#import "TXHomeTabbarController.h"
 #import "TXBaseNavigationController.h"
 #import "TXBaseViewController.h"
 

@@ -71,6 +71,18 @@ static MBProgressHUD *HUD;
     [self setEdgesForExtendedLayout:UIRectEdgeNone];
     
     [self.keyBoardScrollView addSubview_canAjustKeyBoard:self.tableView];
+    
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
+    btn.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(clickBtn) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+- (void)clickBtn{
+    TXBaseViewController *viewController = [[TXBaseViewController alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

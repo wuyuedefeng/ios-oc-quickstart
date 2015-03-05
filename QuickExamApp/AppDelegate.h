@@ -13,7 +13,7 @@
 @property (strong, nonatomic) UIWindow *window;
 
 //new
-- (void)transToHomeTabbarController;
+- (void)transToHomeController;
 + (void)hideTableBar:(BOOL)shouldHide;
 
 @end
