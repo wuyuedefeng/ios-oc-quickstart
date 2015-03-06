@@ -20,18 +20,38 @@ PODS:
   - AFNetworking/UIKit (2.4.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - Masonry (0.6.1)
   - MBProgressHUD (0.9)
   - MLTransition (1.0)
   - XHRefreshControl (3.8)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.4.1)
+  - BlocksKit (~> 2.2.5)
+  - Masonry (~> 0.6.1)
   - MBProgressHUD (~> 0.9)
   - MLTransition (~> 1.0)
   - XHRefreshControl (~> 3.8)
 
 SPEC CHECKSUMS:
   AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
+  BlocksKit: 4439e7f30a9f90743462ca63545a15c1f4304cef
+  Masonry: 2cb49fd14d203d2db5ca6bb017135b235dde9980
   MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
   MLTransition: 4352110c910899c20459d056c3eb3343a0e3cbe9
   XHRefreshControl: e2105c0189c5641a1d73eeb4ac32f678a164156a

@@ -49,7 +49,6 @@
         if (![storeVersion tx_isNotNilString]) {
             [[NSUserDefaults standardUserDefaults] setObject:version forKey:kAppTipUpdate];
             [[NSUserDefaults standardUserDefaults] synchronize];
-            storeVersion = version;
         }
 //        else if([storeVersion isEqualToString:version]) {
 //            return ;
