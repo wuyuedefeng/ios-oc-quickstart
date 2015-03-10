@@ -72,11 +72,25 @@ static MBProgressHUD *HUD;
     
     [self.keyBoardScrollView addSubview_canAjustKeyBoard:self.tableView];
     
+    {
+        UIView *superview = self.view;
+        
+        UIView *view1 = [[UIView alloc] init];
+        view1.translatesAutoresizingMaskIntoConstraints = NO;
+        view1.backgroundColor = [UIColor greenColor];
+        [superview addSubview:view1];
+        
+        UIEdgeInsets padding = UIEdgeInsetsMake(10, 10, 10, 10);
+        
+        [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(superview).with.insets(padding);
+        }];
     
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
-    btn.backgroundColor = [UIColor greenColor];
-    [self.view addSubview:btn];
-    [btn addTarget:self action:@selector(clickBtn) forControlEvents:UIControlEventTouchUpInside];
+        UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
+        btn.backgroundColor = [UIColor greenColor];
+        [self.view addSubview:btn];
+        [btn addTarget:self action:@selector(clickBtn) forControlEvents:UIControlEventTouchUpInside];
+    }
     
 }
 

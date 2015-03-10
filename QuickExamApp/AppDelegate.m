@@ -50,6 +50,44 @@ static TXHomeTabbarController *homeTabbarCtrl;
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+
+{
+    
+    if (!url) {
+        
+        return NO;
+        
+    }
+    
+    NSLog(@"handleOpenURL: %@", [url absoluteString]);
+    
+    // 在host等于cn.andpush.com时，说明是注册请求
+    
+    if ([[url host] isEqualToString:@"cn.andpush.com"]) {
+        
+        // 请求的url地址： andpush://cn.andpush.com/access/register?code=zOdSpC8ZXv
+        
+        // 获取注册邀请码 code
+        
+        NSString *code = [[url query] substringFromIndex:[[url query] rangeOfString:@"code="].location+5];
+        
+        NSLog(@"code: %@", code);
+        
+        // 使用本地 ViewController 来注册
+        
+        return YES;
+        
+    } else {
+        
+        return NO;
+        
+    }
+    
+}
+
+
+
 - (void)transToHomeController
 {
     if(!homeTabbarCtrl)
