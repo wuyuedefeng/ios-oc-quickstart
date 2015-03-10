@@ -11,7 +11,6 @@
 
 //#import <UIViewController+ScrollingNavbar.h>
 #import <MLBlackTransition.h>
-#import <XHPullRefreshTableViewController.h>
 #import <BlocksKit.h>
 #import <Masonry.h>
 

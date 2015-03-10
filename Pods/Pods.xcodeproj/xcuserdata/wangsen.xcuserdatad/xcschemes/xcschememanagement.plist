@@ -29,11 +29,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-XHRefreshControl.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,37 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2EC2B9D7B2F2EBA97C8A5C58</key>
+		<key>0F731BF249CB7590D2521C3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>726A9D89365E04DC40AFC378</key>
+		<key>3ED6760583270BAEE1A66F0E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7BC305C4F8AD22FA578CB042</key>
+		<key>8664F236AB02BCA9A8550EF7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>92FF69F3F7CADACAE59E8CCF</key>
+		<key>B98CE51D1667AFADC045E151</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9403742A77C6DBE619D01F6F</key>
+		<key>CCAD722DF5A683CC287D65D3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BC49D8B95E1219CC396D4FEF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DD5951F7119151C540743BED</key>
+		<key>EB8856B6DE8AE812C4AA085C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -102,9 +102,3 @@
 #define COCOAPODS_VERSION_MINOR_Masonry 6
 #define COCOAPODS_VERSION_PATCH_Masonry 1
 
-// XHRefreshControl
-#define COCOAPODS_POD_AVAILABLE_XHRefreshControl
-#define COCOAPODS_VERSION_MAJOR_XHRefreshControl 3
-#define COCOAPODS_VERSION_MINOR_XHRefreshControl 8
-#define COCOAPODS_VERSION_PATCH_XHRefreshControl 0
-
