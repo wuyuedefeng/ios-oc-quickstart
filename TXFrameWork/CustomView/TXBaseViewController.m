@@ -13,7 +13,7 @@
 #import "UIView+TXCategory.h"
 #import "AppDelegate.h"
 static MBProgressHUD *HUD;
-@interface TXBaseViewController ()
+@interface TXBaseViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 @implementation TXBaseViewController
@@ -65,18 +65,18 @@ static MBProgressHUD *HUD;
     
     
     {
-        UIView *superview = self.view;
-        
-        UIView *view1 = [[UIView alloc] init];
-        view1.translatesAutoresizingMaskIntoConstraints = NO;
-        view1.backgroundColor = [UIColor greenColor];
-        [superview addSubview:view1];
-        
-        UIEdgeInsets padding = UIEdgeInsetsMake(10, 10, 10, 10);
-        
-        [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(superview).with.insets(padding);
-        }];
+//        UIView *superview = self.view;
+//        
+//        UIView *view1 = [[UIView alloc] init];
+//        view1.translatesAutoresizingMaskIntoConstraints = NO;
+//        view1.backgroundColor = [UIColor greenColor];
+//        [superview addSubview:view1];
+//        
+//        UIEdgeInsets padding = UIEdgeInsetsMake(10, 10, 10, 10);
+//        
+//        [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.edges.equalTo(superview).with.insets(padding);
+//        }];
     
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
         btn.backgroundColor = [UIColor greenColor];
@@ -85,9 +85,18 @@ static MBProgressHUD *HUD;
     }
     
 }
-
+- (UITableView *)tableView {
+    if (!_tableView) {
+        CGRect tableViewFrame = self.view.bounds;
+        _tableView = [[TXTableView alloc] initWithFrame:tableViewFrame style:self.tableViewStyle];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+    }
+    return _tableView;
+}
+#pragma mark - TableView Helper Method
 - (void)clickBtn{
-    TXBaseViewController *viewController = [[TXBaseViewController alloc] init];
+    FirstViewController *viewController = [[FirstViewController alloc] init];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
@@ -159,5 +168,19 @@ static MBProgressHUD *HUD;
 - (void)setRightBarButtonWithtarget:(id)target action:(SEL)action title:(NSString *)title
 {
     [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:target action:action]];
+}
+#pragma mark - UITableView DataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataSource.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    // in subClass
+    return nil;
 }
 @end

@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 @class TXKeyBoardScrollView;
+@class TXTableView;
 
 @interface TXBaseViewController : UIViewController
+
 @property (nonatomic, weak) TXKeyBoardScrollView *keyBoardScrollView;
+@property (nonatomic, strong) TXTableView *tableView;
+@property (nonatomic, assign)UITableViewStyle tableViewStyle;
+@property (nonatomic, strong)NSMutableArray *dataSource;
 
 
 - (void)beginRequestWithAnimation:(BOOL)hasAnimation;

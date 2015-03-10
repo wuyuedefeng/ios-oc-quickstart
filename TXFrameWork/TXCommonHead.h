@@ -12,6 +12,7 @@
 //#import <UIViewController+ScrollingNavbar.h>
 #import <MLBlackTransition.h>
 #import <BlocksKit.h>
+#import "MJRefresh.h"
 #import <Masonry.h>
 
 #import "NSString+TXCategory.h"
@@ -24,6 +25,8 @@
 #import "TXHomeTabbarController.h"
 #import "TXBaseNavigationController.h"
 #import "TXBaseViewController.h"
+#import "FirstViewController.h"
+
 
 #import "TXKeyboardManager.h"
 #import "TXScrollView.h"
