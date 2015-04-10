@@ -13,6 +13,9 @@
 #import <MLBlackTransition.h>
 #import <BlocksKit.h>
 #import "MJRefresh.h"
+
+//#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
 #import <Masonry.h>
 
 #import "NSString+TXCategory.h"

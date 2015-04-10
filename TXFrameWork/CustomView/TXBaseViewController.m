@@ -78,10 +78,25 @@ static MBProgressHUD *HUD;
 //            make.edges.equalTo(superview).with.insets(padding);
 //        }];
     
-        UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
-        btn.backgroundColor = [UIColor greenColor];
-        [self.view addSubview:btn];
-        [btn addTarget:self action:@selector(clickBtn) forControlEvents:UIControlEventTouchUpInside];
+//        UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
+//        btn.backgroundColor = [UIColor greenColor];
+//        [self.view addSubview:btn];
+//        [btn addTarget:self action:@selector(clickBtn) forControlEvents:UIControlEventTouchUpInside];
+        
+        
+        UIView *view = [[UIView alloc] init];
+        [self.view addSubview:view];
+//        btn.translatesAutoresizingMaskIntoConstraints = NO;
+        view.backgroundColor = [UIColor blueColor];
+        
+        __weak UIView *superview = self.view;
+        [view mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.equalTo(@100);
+            make.height.equalTo(@100);
+            make.bottom.equalTo(superview.mas_bottom);
+        }];
+        
+        
     }
     
 }
