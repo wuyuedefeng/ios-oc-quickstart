@@ -5,4 +5,3 @@ pod 'MBProgressHUD', '~> 0.9'
 pod 'MLTransition', '~> 1.0'
 pod 'BlocksKit', '~> 2.2.5'                         #block框架
 pod 'Masonry', '~> 0.6.1'                           #autolayout自动布局
-pod 'RDVTabBarController'                           #自定义tabBarController

@@ -38,7 +38,6 @@ PODS:
   - Masonry (0.6.1)
   - MBProgressHUD (0.9)
   - MLTransition (1.0)
-  - RDVTabBarController (1.1.9)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.4.1)
@@ -46,7 +45,6 @@ DEPENDENCIES:
   - Masonry (~> 0.6.1)
   - MBProgressHUD (~> 0.9)
   - MLTransition (~> 1.0)
-  - RDVTabBarController
 
 SPEC CHECKSUMS:
   AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
@@ -54,6 +52,5 @@ SPEC CHECKSUMS:
   Masonry: 2cb49fd14d203d2db5ca6bb017135b235dde9980
   MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
   MLTransition: 4352110c910899c20459d056c3eb3343a0e3cbe9
-  RDVTabBarController: c1c826e2d2f2e26a5221e425a646d295b9dfe936
 
 COCOAPODS: 0.35.0
