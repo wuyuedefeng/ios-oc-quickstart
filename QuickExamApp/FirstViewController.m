@@ -13,7 +13,6 @@
 @end
 
 @implementation FirstViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -27,9 +26,9 @@
     // 马上进入刷新状态
     [self.tableView.legendHeader beginRefreshing];
     
-    [self.tableView addLegendFooterWithRefreshingBlock:^{
-        [weakSelf loadDataSource];
-    }];
+//    [self.tableView addLegendFooterWithRefreshingBlock:^{
+//        [weakSelf loadDataSource];
+//    }];
     
 }
 

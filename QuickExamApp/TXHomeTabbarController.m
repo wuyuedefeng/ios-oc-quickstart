@@ -123,25 +123,34 @@
 - (void)customTabBar
 {
 
-    UIView *buttonContentView = [[UIView alloc] initWithFrame:CGRectMake(0, self.tabBar.y, self.tabBar.width, self.tabBar.frame.size.height)];
-    _btnContentView = buttonContentView;
+    UIView *buttonContentView = [[UIView alloc] init];
     [buttonContentView setBackgroundColor:[UIColor colorWithRed:247/255.0 green:247/255.0 blue:247/255.0 alpha:1.0]];
     [self.view addSubview:buttonContentView];
+    [buttonContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.tabBar);
+    }];
+    _btnContentView = buttonContentView;
+    
+    NSLog(@"%f",self.tabBar.height);
     //创建按钮
     NSInteger viewCount = self.viewControllers.count > 5 ? 5 : self.viewControllers.count;
     self.buttons = [NSMutableArray arrayWithCapacity:viewCount];
-    double _width = 320 / viewCount;
-    double _height = self.tabBar.frame.size.height;
+    double _width = self.tabBar.width / viewCount;
     for (int i = 0; i < viewCount; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        btn.frame = CGRectMake(i*_width,0, _width, _height);
+        [buttonContentView  addSubview:btn];
+        
+        UIEdgeInsets padding = UIEdgeInsetsMake(0, i*_width, 0, (viewCount-i-1) * _width);
+        [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(_btnContentView).with.offset(padding);
+        }];
         [btn setImage:[UIImage imageNamed:_images[i]] forState:UIControlStateNormal];
         btn.adjustsImageWhenHighlighted = NO;
         [btn setImage:[UIImage imageNamed:_selectedImages[i]] forState:UIControlStateSelected];
         [btn addTarget:self action:@selector(selectedTab:) forControlEvents:UIControlEventTouchUpInside];
         btn.tag = i;
         [self.buttons addObject:btn];
-        [buttonContentView  addSubview:btn];
+        
     }
     
 
@@ -185,5 +194,10 @@
 - (void)showMyTabBar
 {
     _btnContentView.hidden = NO;
+}
+
+- (UIView *)tabBarCustomView
+{
+   return _btnContentView;
 }
 @end

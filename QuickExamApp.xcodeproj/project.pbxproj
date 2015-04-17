@@ -274,11 +274,11 @@
 		4B463ADE1AA5765F00E6CAB1 /* TXFrameWork */ = {
 			isa = PBXGroup;
 			children = (
-				4B463AEA1AA5777C00E6CAB1 /* TXCommonConfig.h */,
 				4B463AE91AA5772400E6CAB1 /* CustomCategory */,
 				4B463AE81AA576F500E6CAB1 /* CustomView */,
 				4B463AE31AA576DC00E6CAB1 /* Tool */,
 				4B463AEE1AA5780C00E6CAB1 /* TXCommonHead.h */,
+				4B463AEA1AA5777C00E6CAB1 /* TXCommonConfig.h */,
 			);
 			path = TXFrameWork;
 			sourceTree = "<group>";

@@ -15,6 +15,7 @@
 //new
 - (void)transToHomeController;
 + (void)hideTableBar:(BOOL)shouldHide;
++ (UIView *)tabBarCustomView;
 
 @end
 

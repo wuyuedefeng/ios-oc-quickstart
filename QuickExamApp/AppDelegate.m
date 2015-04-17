@@ -115,4 +115,8 @@ static TXHomeTabbarController *homeTabbarCtrl;
         }
     }
 }
++ (UIView *)tabBarCustomView
+{
+    return [homeTabbarCtrl tabBarCustomView];
+}
 @end

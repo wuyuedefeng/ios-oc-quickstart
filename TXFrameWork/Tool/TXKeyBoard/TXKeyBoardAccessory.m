@@ -48,7 +48,7 @@ kTXStrictSingletonForClass(TXKeyBoardAccessory);
                                                                          target:nil
                                                                          action:nil];
         
-        UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0,0,320,44)];
+        UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0,0,kTXScreenWidth,44 * kTXScreenWidth/320)];
         toolbar.barStyle = UIBarStyleBlackTranslucent;
         toolbar.items = [NSArray arrayWithObjects:_prevButtonItem, _nextButtonItem, _spaceButtonItem,_doneButtonItem, nil];
         self.inputAccessoryView = toolbar;

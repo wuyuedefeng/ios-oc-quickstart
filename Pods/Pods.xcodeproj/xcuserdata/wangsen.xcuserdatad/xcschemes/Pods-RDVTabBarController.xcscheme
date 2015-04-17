@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7E4D9FB3CE08F3F9AFA052DC"
-               BuildableName = "libPods-MLTransition.a"
-               BlueprintName = "Pods-MLTransition"
+               BlueprintIdentifier = "C9F26557D466B310C0627DBD"
+               BuildableName = "libPods-RDVTabBarController.a"
+               BlueprintName = "Pods-RDVTabBarController"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

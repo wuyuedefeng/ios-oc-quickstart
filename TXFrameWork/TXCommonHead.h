@@ -9,11 +9,12 @@
 #ifndef QuickExamApp_TXCommonHead_h
 #define QuickExamApp_TXCommonHead_h
 
+#import "AppDelegate.h"
+
 //#import <UIViewController+ScrollingNavbar.h>
 #import <MLBlackTransition.h>
 #import <BlocksKit.h>
 #import "MJRefresh.h"
-#import <RDVTabBarController.h>
 
 //#define MAS_SHORTHAND
 #define MAS_SHORTHAND_GLOBALS
@@ -48,6 +49,7 @@
 #define kTXScreenSize   ([UIScreen mainScreen].bounds.size)
 #define kTXScreenWidth  (kTXScreenSize.width)
 #define kTXScreenHeight (kTXScreenSize.height)
+#define kTXScrreenRate (kTXScreenWidth/320)
 /**
  *定义常用宏
  *NSLog

@@ -27,4 +27,6 @@
 - (void)hideMyTabBar;
 - (void)showMyTabBar;
 
+- (UIView *)tabBarCustomView;
+
 @end

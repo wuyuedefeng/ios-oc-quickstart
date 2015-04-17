@@ -11,7 +11,6 @@
 #import "UIViewController+TXCategory.h"
 #import <MBProgressHUD.h>
 #import "UIView+TXCategory.h"
-#import "AppDelegate.h"
 static MBProgressHUD *HUD;
 @interface TXBaseViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -48,20 +47,33 @@ static MBProgressHUD *HUD;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setEdgesForExtendedLayout:UIRectEdgeLeft|UIRectEdgeBottom|UIRectEdgeRight];
 
     [self tx_SetTitleText:self.title Color:[UIColor blueColor] font:[UIFont systemFontOfSize:17]];
     
-    
     // Do any additional setup after loading the view.
-    TXKeyBoardScrollView *keyBoardScrollView = [[TXKeyBoardScrollView alloc] initWithFrame:self.view.bounds];
+    TXKeyBoardScrollView *keyBoardScrollView = [[TXKeyBoardScrollView alloc] init];
     [self.view addSubview:keyBoardScrollView];
+    
+    UIEdgeInsets padding = UIEdgeInsetsZero;
+    UIView *tabbar = AppDelegate.tabBarCustomView;
+    if(!tabbar.isHidden){
+        padding.bottom = tabbar.height;
+    }
+    [keyBoardScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).with.offset(padding);
+    }];
+    
     self.keyBoardScrollView = keyBoardScrollView;
     self.keyBoardScrollView.backgroundColor=[UIColor clearColor];
     self.view.backgroundColor = [UIColor tx_colorWithHexString:@"#efeff4"];
     [self.keyBoardScrollView setKeyboardDismissMode:UIScrollViewKeyboardDismissModeOnDrag];
     
-    [self setAutomaticallyAdjustsScrollViewInsets:YES];
-    [self setEdgesForExtendedLayout:UIRectEdgeNone];
+    NSLog(@"w:%f,h:%f",kTXScreenWidth,kTXScreenHeight);
+    
+    
+//    [self setAutomaticallyAdjustsScrollViewInsets:YES];
+    
     
     
     {
@@ -78,10 +90,10 @@ static MBProgressHUD *HUD;
 //            make.edges.equalTo(superview).with.insets(padding);
 //        }];
     
-//        UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
-//        btn.backgroundColor = [UIColor greenColor];
-//        [self.view addSubview:btn];
-//        [btn addTarget:self action:@selector(clickBtn) forControlEvents:UIControlEventTouchUpInside];
+        UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        btn.backgroundColor = [UIColor greenColor];
+        [self.view addSubview:btn];
+        [btn addTarget:self action:@selector(clickBtn) forControlEvents:UIControlEventTouchUpInside];
         
         
         UIView *view = [[UIView alloc] init];
@@ -89,7 +101,7 @@ static MBProgressHUD *HUD;
 //        btn.translatesAutoresizingMaskIntoConstraints = NO;
         view.backgroundColor = [UIColor blueColor];
         
-        __weak UIView *superview = self.view;
+        __weak UIView *superview = self.keyBoardScrollView;
         [view mas_makeConstraints:^(MASConstraintMaker *make) {
             make.width.equalTo(@100);
             make.height.equalTo(@100);
