@@ -13,6 +13,7 @@
 #import <MLBlackTransition.h>
 #import <BlocksKit.h>
 #import "MJRefresh.h"
+#import <RDVTabBarController.h>
 
 //#define MAS_SHORTHAND
 #define MAS_SHORTHAND_GLOBALS
