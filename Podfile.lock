@@ -1,11 +1,11 @@
 PODS:
   - AFNetworking (2.4.1):
-    - AFNetworking/NSURLConnection (= 2.4.1)
-    - AFNetworking/NSURLSession (= 2.4.1)
-    - AFNetworking/Reachability (= 2.4.1)
-    - AFNetworking/Security (= 2.4.1)
-    - AFNetworking/Serialization (= 2.4.1)
-    - AFNetworking/UIKit (= 2.4.1)
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
   - AFNetworking/NSURLConnection (2.4.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
@@ -21,7 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - BlocksKit (2.2.5):
-    - BlocksKit/All (= 2.2.5)
+    - BlocksKit/All
   - BlocksKit/All (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
@@ -49,11 +49,11 @@ DEPENDENCIES:
   - RDVTabBarController
 
 SPEC CHECKSUMS:
-  AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
-  BlocksKit: 4439e7f30a9f90743462ca63545a15c1f4304cef
-  Masonry: 2cb49fd14d203d2db5ca6bb017135b235dde9980
-  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
-  MLTransition: 4352110c910899c20459d056c3eb3343a0e3cbe9
-  RDVTabBarController: c1c826e2d2f2e26a5221e425a646d295b9dfe936
+  AFNetworking: 41d45d2c14219af0fa5addf3cfd433a002c13c9f
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
+  MBProgressHUD: d8e7ea388dc1549a42e0d219067cf5f2c898fb66
+  MLTransition: c6d387be3a133c88626a3eeb567f6d2f4281b740
+  RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.34.4
