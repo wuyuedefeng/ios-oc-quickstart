@@ -8,7 +8,6 @@
 
 #import "TXKeyBoardScrollView.h"
 #import "TXKeyboardManager.h"
-#import "UIView+WhenTappedBlocks.h"
 #import "UIViewController+TXCategory.h"
 @implementation TXKeyBoardScrollView
 
@@ -22,9 +21,11 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-        [self whenTapped:^{
+        
+        [self bk_whenTapped:^{
             [self endEditing:YES];
         }];
+    
 //        [self setKeyboardDismissMode:UIScrollViewKeyboardDismissModeOnDrag];
         [self setShowsHorizontalScrollIndicator:NO];
         [self setShowsVerticalScrollIndicator:NO];

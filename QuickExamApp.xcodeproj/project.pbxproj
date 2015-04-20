@@ -26,7 +26,6 @@
 		4B39D5141AA6F2FA008CC77C /* TXScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D5131AA6F2FA008CC77C /* TXScrollView.m */; };
 		4B39D51A1AA6F31D008CC77C /* TXKeyBoardAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D5171AA6F31D008CC77C /* TXKeyBoardAccessory.m */; };
 		4B39D51B1AA6F31D008CC77C /* TXKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D5191AA6F31D008CC77C /* TXKeyboardManager.m */; };
-		4B39D51E1AA6F35F008CC77C /* UIView+WhenTappedBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D51D1AA6F35F008CC77C /* UIView+WhenTappedBlocks.m */; };
 		4B39D5211AA6F381008CC77C /* TXTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D5201AA6F381008CC77C /* TXTextField.m */; };
 		4B39D5241AA6F39C008CC77C /* TXTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D5231AA6F39C008CC77C /* TXTextView.m */; };
 		4B4639F21AA561EC00E6CAB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4639F11AA561EC00E6CAB1 /* main.m */; };
@@ -100,8 +99,6 @@
 		4B39D5171AA6F31D008CC77C /* TXKeyBoardAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXKeyBoardAccessory.m; sourceTree = "<group>"; };
 		4B39D5181AA6F31D008CC77C /* TXKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXKeyboardManager.h; sourceTree = "<group>"; };
 		4B39D5191AA6F31D008CC77C /* TXKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXKeyboardManager.m; sourceTree = "<group>"; };
-		4B39D51C1AA6F35F008CC77C /* UIView+WhenTappedBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WhenTappedBlocks.h"; sourceTree = "<group>"; };
-		4B39D51D1AA6F35F008CC77C /* UIView+WhenTappedBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WhenTappedBlocks.m"; sourceTree = "<group>"; };
 		4B39D51F1AA6F381008CC77C /* TXTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTextField.h; sourceTree = "<group>"; };
 		4B39D5201AA6F381008CC77C /* TXTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTextField.m; sourceTree = "<group>"; };
 		4B39D5221AA6F39C008CC77C /* TXTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTextView.h; sourceTree = "<group>"; };
@@ -305,17 +302,13 @@
 		4B463AE81AA576F500E6CAB1 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				4B39D5091AA6F0F1008CC77C /* TXBaseViewController.h */,
-				4B39D50A1AA6F0F1008CC77C /* TXBaseViewController.m */,
-				4B463AF41AA5808600E6CAB1 /* TXBaseNavigationController.h */,
-				4B463AF51AA5808600E6CAB1 /* TXBaseNavigationController.m */,
-				4B39D5121AA6F2FA008CC77C /* TXScrollView.h */,
-				4B39D5131AA6F2FA008CC77C /* TXScrollView.m */,
-				4B39D50F1AA6F2D7008CC77C /* TXKeyBoardScrollView.h */,
-				4B39D5101AA6F2D7008CC77C /* TXKeyBoardScrollView.m */,
+				4B805BFE1AA7FE2700EFD96D /* TXButton.h */,
+				4B805BFF1AA7FE2700EFD96D /* TXButton.m */,
 				4B39D51F1AA6F381008CC77C /* TXTextField.h */,
 				4B39D5201AA6F381008CC77C /* TXTextField.m */,
 				4B39D5221AA6F39C008CC77C /* TXTextView.h */,
+				4B39D5121AA6F2FA008CC77C /* TXScrollView.h */,
+				4B39D5131AA6F2FA008CC77C /* TXScrollView.m */,
 				4B39D5231AA6F39C008CC77C /* TXTextView.m */,
 				4B805BF51AA7FD2100EFD96D /* TXTableView.h */,
 				4B805BF61AA7FD2100EFD96D /* TXTableView.m */,
@@ -323,8 +316,12 @@
 				4B805BF91AA7FDBE00EFD96D /* TXTableViewCell.m */,
 				4B805BFB1AA7FDEA00EFD96D /* TXEditableTableViewCell.h */,
 				4B805BFC1AA7FDEA00EFD96D /* TXEditableTableViewCell.m */,
-				4B805BFE1AA7FE2700EFD96D /* TXButton.h */,
-				4B805BFF1AA7FE2700EFD96D /* TXButton.m */,
+				4B39D50F1AA6F2D7008CC77C /* TXKeyBoardScrollView.h */,
+				4B39D5101AA6F2D7008CC77C /* TXKeyBoardScrollView.m */,
+				4B39D5091AA6F0F1008CC77C /* TXBaseViewController.h */,
+				4B39D50A1AA6F0F1008CC77C /* TXBaseViewController.m */,
+				4B463AF41AA5808600E6CAB1 /* TXBaseNavigationController.h */,
+				4B463AF51AA5808600E6CAB1 /* TXBaseNavigationController.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -334,8 +331,6 @@
 			children = (
 				4B463AFA1AA580F400E6CAB1 /* UIView+TXCategory.h */,
 				4B463AFB1AA580F400E6CAB1 /* UIView+TXCategory.m */,
-				4B39D51C1AA6F35F008CC77C /* UIView+WhenTappedBlocks.h */,
-				4B39D51D1AA6F35F008CC77C /* UIView+WhenTappedBlocks.m */,
 				4B463AEB1AA577CA00E6CAB1 /* NSString+TXCategory.h */,
 				4B463AEC1AA577CA00E6CAB1 /* NSString+TXCategory.m */,
 				4B39D50C1AA6F12D008CC77C /* UIColor+TXCategory.h */,
@@ -519,7 +514,6 @@
 				4B39D50B1AA6F0F1008CC77C /* TXBaseViewController.m in Sources */,
 				4B39D50E1AA6F12D008CC77C /* UIColor+TXCategory.m in Sources */,
 				4B169CE51AAEAC6E00751B67 /* MJRefreshLegendHeader.m in Sources */,
-				4B39D51E1AA6F35F008CC77C /* UIView+WhenTappedBlocks.m in Sources */,
 				4B805BF71AA7FD2100EFD96D /* TXTableView.m in Sources */,
 				4B805BFA1AA7FDBE00EFD96D /* TXTableViewCell.m in Sources */,
 				4B39D5211AA6F381008CC77C /* TXTextField.m in Sources */,

@@ -14,6 +14,7 @@
 
 @implementation FirstViewController
 - (void)viewDidLoad {
+    [AppDelegate hideTableBar:YES];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.keyBoardScrollView addSubview:self.tableView];

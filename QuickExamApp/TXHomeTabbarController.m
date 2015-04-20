@@ -131,7 +131,6 @@
     }];
     _btnContentView = buttonContentView;
     
-    NSLog(@"%f",self.tabBar.height);
     //创建按钮
     NSInteger viewCount = self.viewControllers.count > 5 ? 5 : self.viewControllers.count;
     self.buttons = [NSMutableArray arrayWithCapacity:viewCount];

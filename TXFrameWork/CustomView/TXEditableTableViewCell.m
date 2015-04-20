@@ -12,7 +12,6 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
 		_textField = [[TXTextField alloc] initWithFrame: self.bounds];
-        _textField.x = 20;
         _textField.delegate = self;
 		_textField.minimumFontSize = 12;
 		_textField.adjustsFontSizeToFitWidth = YES;
@@ -40,8 +39,6 @@
 -(void) layoutSubviews
 {
 	[super layoutSubviews];
-	
-	
 }
 #pragma mark - UITextFieldDelegate
 - (BOOL)textFieldShouldBeginEditing:(UITextView *)textView

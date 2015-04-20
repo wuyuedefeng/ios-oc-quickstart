@@ -14,6 +14,7 @@
 //#import <UIViewController+ScrollingNavbar.h>
 #import <MLBlackTransition.h>
 #import <BlocksKit.h>
+#import <BlocksKit/UIView+BlocksKit.h>
 #import "MJRefresh.h"
 
 //#define MAS_SHORTHAND
@@ -24,7 +25,6 @@
 #import "UIViewController+TXCategory.h"
 #import "UIView+TXCategory.h"
 #import "UIColor+TXCategory.h"
-#import "UIView+WhenTappedBlocks.h"
 #import "UITableViewCell+TXCategory.h"
 
 #import "TXHomeTabbarController.h"
